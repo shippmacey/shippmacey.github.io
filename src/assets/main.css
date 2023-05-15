@@ -9,26 +9,30 @@
 }
 
 a,
-.green {
+.grey {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--vt-c-grey);
+  transition: 0.4s;
+}
+
+.pink {
+  color: var(--vt-c-pink);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: var(--vt-c-pink-half);
   }
 }
 
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    place-items: top center;
   }
 
   #app {
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }

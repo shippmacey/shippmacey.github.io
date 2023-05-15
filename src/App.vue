@@ -7,8 +7,6 @@ import Map from './components/Map.vue'
 
 <template>
 
-
-
   <header>
     <Hero msg="Danielle & Paul"/>
   </header>
@@ -19,20 +17,16 @@ import Map from './components/Map.vue'
     <Map />
   </main>
 
-
-
   <Footer />
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
+  margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
-  header {
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+
 }
 </style>

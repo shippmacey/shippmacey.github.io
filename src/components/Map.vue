@@ -5,15 +5,19 @@ import { GoogleMap, Marker } from "vue3-google-map";
 export default defineComponent({
   components: { GoogleMap, Marker },
   setup() {
-    const center = { lat: 40.689247, lng: -74.044502 };
+    const center = { lat: 52.180527, lng: 1.430846 };
+    const markerOptions = { position: center, title: "Glemham Hall" };
 
-    return { center };
+    return { center, markerOptions };
   },
 });
 </script>
 
 <template>
-  <GoogleMap api-key="YOUR_GOOGLE_MAPS_API_KEY" style="width: 100%; height: 500px" :center="center" :zoom="15">
+  <!-- <GoogleMap api-key="AIzaSyB3fxEHwOgrEGTttHpLnFmvPntU6LzfPnI" style="width: 100%; height: 500px" :center="center" :zoom="15">
     <Marker :options="{ position: center }" />
+  </GoogleMap> -->
+  <GoogleMap api-key="AIzaSyB3fxEHwOgrEGTttHpLnFmvPntU6LzfPnI" style="width: 100%; height: 500px" :center="center" :zoom="12">
+    <Marker :options="markerOptions" />
   </GoogleMap>
 </template>
