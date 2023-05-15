@@ -1,8 +1,8 @@
 <script setup>
 import Navigation from './components/Navigation.vue'
+import Content from './components/Content.vue'
 import Hero from './components/Hero.vue'
 import Footer from './components/Footer.vue'
-import Map from './components/Map.vue'
 </script>
 
 <template>
@@ -14,7 +14,9 @@ import Map from './components/Map.vue'
   <Navigation />
 
   <main>
-    <Map />
+
+    <Content />
+
   </main>
 
   <Footer />

@@ -11,6 +11,16 @@ export default {
 
 <template>
     <footer>
-      <small>© {{ currentDate() }} Shipp-Macey Wedding. All Rights Reserved.</small>
+      <small>Made with <i class="em em-heart" aria-role="presentation" aria-label="HEART"></i> - © {{ currentDate() }} Shipp-Macey Wedding. All Rights Reserved.</small>
     </footer>
 </template>
+
+<style>
+    footer {
+        text-transform: uppercase;
+        font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 20px;
+    }
+</style>

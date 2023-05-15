@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#venue" role="button" data-bs-toggle="dropdown" aria-expanded="false">The Venue</a>
@@ -31,29 +31,29 @@
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Daytime Information</a>
+                <a class="nav-link dropdown-toggle"  href="#daytime-guests" role="button" data-bs-toggle="dropdown" aria-expanded="false">Daytime Information</a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class="dropdown-item" href="#">Menu Choices</a>
+                        <a class="dropdown-item" href="#daytime-menu-choice">Menu Choices</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evening Information</a>
+                <a class="nav-link dropdown-toggle" href="#evening-guests" role="button" data-bs-toggle="dropdown" aria-expanded="false">Evening Information</a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class="dropdown-item" href="#">Food & Drinks</a>
+                        <a class="dropdown-item" href="#evening-menu-choice">Food & Drinks</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Gifts</a>
+                <a class="nav-link" href="#gifts">Gifts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Upload Photos</a>
+                <a class="nav-link" href="#upload-your-photos">Upload Photos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
 
             </ul>
@@ -70,6 +70,7 @@
     }
     ul {
         padding:0;
+        text-align: center;
     }
 
     li {
@@ -77,7 +78,7 @@
         list-style-type: none;
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
-        font-weight:bold;
+        font-weight: bold;
         text-transform: uppercase;
         line-height: 3.5rem;
     }
@@ -89,8 +90,20 @@
         font-weight: 800;
     }
 
-    ul li li {
+    ul li ul {
         display: none;
+    }
+
+    ul li.dropdown:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        background-color: var(--vt-c-pink);
+    }
+
+    ul li.dropdown:hover .dropdown-menu li {
+        display: block;
+        float: left;
+        clear: both;
     }
 
 
