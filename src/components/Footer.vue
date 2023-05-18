@@ -17,6 +17,8 @@ export default {
 
 <style>
     footer {
+        border-top: solid 1px var(--vt-c-grey-half);
+        padding-top: 20px;
         text-transform: uppercase;
         font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 0.7rem;
