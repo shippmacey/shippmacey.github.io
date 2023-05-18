@@ -23,7 +23,7 @@
                         <a class="dropdown-item" href="#taxis">Book a taxi</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#accommodation">Local Accommodation</a>
+                        <a class="dropdown-item" href="#accommodation">Accommodation</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="#parking">Parking</a>
