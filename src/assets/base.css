@@ -64,6 +64,10 @@
   src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
